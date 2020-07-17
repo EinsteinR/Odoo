@@ -1,0 +1,7 @@
+Program do sotrtowania paczek
+
+box_sort.py
+pack(n) - metoda sortująca która przyjmuje jako parametr dodatnią liczbę całkowitą nie większą niż 100
+main.py - przykład użycia
+
+Testy jednostkowe wykonane za pomocą pytest
