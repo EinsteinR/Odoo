@@ -8,5 +8,11 @@ def pack(n: int):
         'box_s': 1 if three_pack % 3 == 1 else 0,
         'box_m': 1 if three_pack % 3 == 2 else 0,
         'box_l': three_pack // 3}
+    if layout['box_l'] == 1 and layout['box_s'] == 1:
+        layout['box_s'] = layout['box_l'] = 0
+        layout['box_m'] = 2
+    elif layout['box_l'] == 1 and layout['box_m'] == 1:
+        layout['box_m'] = 0
+        layout['box_l'] += 1
     return layout
 
